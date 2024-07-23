@@ -3,6 +3,7 @@ import Arrow from './component/Arrow'
 import HelloPage from './page/HelloPage'
 import IntroPage from './page/IntroPage'
 import Head from './page/Head';
+import SkillPage from './page/SkillPage';
 
 function App() {
 
@@ -15,14 +16,11 @@ function App() {
         <div className='helloContainer'>
           <HelloPage/>
         </div>
-        {/* <div className='arrowContainer'>
-          <Arrow/>
-        </div> */}
         <div className='introContainer'>
           <IntroPage/>
         </div>
         <div className='skillContainer'>
-
+          <SkillPage/>
         </div>
         <div className='projectContainer'>
 

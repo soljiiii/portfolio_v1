@@ -21,13 +21,19 @@ body{
 }
 .helloContainer{
   width: 980px;
-  height: 300px;
+  height: 250px;
 }
 .introContainer{
   width: 980px;
   height: 400px;
   display: flex;
-  border-top: 3px solid rgb(112, 112, 112);
+  border-radius: 30px;
+  background-color: rgb(113, 134, 120);
+}
+.skillPageContainer{
+  width: 980px;
+  height: 500px;
+  border: 1px solid red;
 }
 .projectContainer{
   width: 980px;
