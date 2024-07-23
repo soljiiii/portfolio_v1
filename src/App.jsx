@@ -1,9 +1,9 @@
 import './App.css'
-import Arrow from './component/Arrow'
 import HelloPage from './page/HelloPage'
 import IntroPage from './page/IntroPage'
 import Head from './page/Head';
 import SkillPage from './page/SkillPage';
+import ProjectPage from './page/ProjectPage';
 
 function App() {
 
@@ -23,10 +23,12 @@ function App() {
           <SkillPage/>
         </div>
         <div className='projectContainer'>
-
+          <ProjectPage/>
         </div>
-        <div className='projectButtonContainer'>
-          
+        <div className='endContainer'>
+          <div className='endcomment'>
+            THANK YOU !
+          </div>
         </div>
       </div>
     </>
