@@ -8,18 +8,21 @@ function ProjectBox({state}){
     
     const pj1 = ["TEAM PRJ : 팔로팔도",
                 "공공 API를 활용하여 지역별 날씨를 보여주고 지역별 캠핑장과 관광지를 추천하는 서비스",
-                "HTML|CSS|Javascript|JQuery|JSP|JAVA|SpringBoot|myBatis|mySQL",
-                "https://www.notion.so/soljiiii/team1-e6476a60f35048f08c3d33022c20398f"]
+                "HTML | CSS | Javascript | JQuery | JSP | JAVA | SpringBoot | myBatis | mySQL",
+                "https://www.notion.so/soljiiii/team1-e6476a60f35048f08c3d33022c20398f",
+                "https://github.com/soljiiii/followpaldo"]
     
     const pj2 = ["TEAM PRJ : 밤양갱",
                 "webRTC를 이용한 화상채팅 마피아 게임",
-                "HTML|CSS|Javascript|React|JAVA|SpringBoot|myBatis|mySQL|JWT-WebRTC-WebSocket",
-                "https://www.notion.so/soljiiii/team2-f83c946d56474c7b9b1a982fcdf7c698"]
+                "HTML | CSS | Javascript | React | JAVA | SpringBoot | myBatis | mySQL | JWT-WebRTC-WebSocket",
+                "https://www.notion.so/soljiiii/team2-f83c946d56474c7b9b1a982fcdf7c698",
+                "https://github.com/soljiiii/bamyanggang-FE"]
 
     const pj3 = ["PERSONAL PRJ : 별들에게 물어봐",
                 "webSocket을 이용한 고민상담 채팅 플랫폼",
-                "HTML|CSS|Javascript|React|JAVA|SpringBoot|myBatis|mySQL|JWT-WebSocket",
-                "https://www.notion.so/soljiiii/personal1-31eea0d5632741ce9859ab7c9c164817"]
+                "HTML | CSS | Javascript | React | JAVA | SpringBoot | myBatis | mySQL | JWT-WebSocket",
+                "https://www.notion.so/soljiiii/personal1-31eea0d5632741ce9859ab7c9c164817",
+                "https://github.com/soljiiii/askTheStars-BE"]
 
 
     useEffect(()=>{
@@ -34,6 +37,15 @@ function ProjectBox({state}){
         }
     },[])
 
+    function openNotion(){
+        const url = project[3];
+        window.open(url,'_blank');
+    }
+
+    function openGit(){
+        const url = project[4];
+        window.open(url,'_blank');
+    }
 
     return(
         <div className="projectBox">
@@ -46,7 +58,14 @@ function ProjectBox({state}){
                 <div className="projectInfoName">{project[0]}</div>
                 <div className="projectInfoExplain">{project[1]}</div>
                 <div className="projectInfoSkill">{project[2]}</div>
-                <div className="projectLinkBox">{project[3]}</div>
+                <div className="projectLinkBox">
+                    <button className="notionButton" onClick={openNotion}>
+                        notion
+                    </button>
+                    <button className="gitButton" onClick={openGit}>
+                        Git
+                    </button>
+                </div>
             </div>
         </div>
     );
