@@ -7,13 +7,19 @@ function ProjectPage(){
                 PROJECT
             </div>
             <div className="project1">
-                <ProjectBox/>
+                <ProjectBox
+                    state={1}
+                />
             </div>
             <div className="project2">
-                <ProjectBox/>
+                <ProjectBox
+                    state={2}
+                />
             </div>
             <div className="project3">
-                <ProjectBox/>
+                <ProjectBox
+                    state={3}
+                />
             </div>
         </>
     );

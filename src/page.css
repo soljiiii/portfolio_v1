@@ -1,39 +1,9 @@
-/*헤더*/
-.aboutmeNav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: 500;
-    width: 150px;
-    border: 1px solid white;
-}
-.skillNav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: 500;
-    width: 150px;
-    border: 1px solid white;
-}
-.projectNav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: 500;
-    width: 150px;
-    border: 1px solid white;
-}
-
 /*헬로박스*/
-.helloContainer{
+.hellobox{
     font-size: 55px;
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    padding-top: 150px;
 }
 .helloTextGradient{
     background: linear-gradient(90deg, #a2fecb, #edbefd, #9daff6);
@@ -250,7 +220,7 @@
 .projectSubject{
     font-size: 25px;
     font-weight: 600;
-        color: #2a2a2a;
+    color: #2a2a2a;
     padding-left: 50px;
     padding-top: 30px;
 }
@@ -265,10 +235,88 @@
 .projectImg{
     width: 400px;
     height: 300px;
-    border: 1px solid white;
 }
 .projectInfo{
     width: 400px;
     height: 300px;
-    border: 1px solid white;
+    display: block;
+}
+.slider{
+    display: flex;
+    width: 400px;
+    height: 300px;
+}
+.slick-list{
+    width: 380px;
+    height: 220px;
+    margin: 0;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    left: 15px;
+    top: 20px;
+    border-radius: 20px;
+}
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+.slider-container {
+    width: 400px; /* 슬라이더 너비 설정 */
+    margin: auto; /* 슬라이더를 중앙에 배치 */
+    position: relative; /* 화살표 위치를 슬라이더에 상대적으로 설정 */
+}
+.arrows-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -50px; /* 슬라이더 아래로 내려서 위치 */
+    width: 100%;
+}
+.prevarrow{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(149, 166, 160);
+    background-color: rgb(149, 166, 160);
+    position: absolute;
+    left: 32.5px;
+    bottom: 14px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+    justify-content: center;
+    border-radius: 100px;
+}
+.nextarrow{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(149, 166, 160);
+    background-color: rgb(149, 166, 160);
+    position: absolute;
+    right: 32.5px;
+    bottom: 14px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+    justify-content: center;
+    border-radius: 100px;
+}
+.pjImg{
+    width: 380px;
+    height: 220px;
 }

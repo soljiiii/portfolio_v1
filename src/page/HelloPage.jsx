@@ -13,7 +13,7 @@ function HelloPage(){
     });
 
     return (
-        <div className="helloContainer">
+        <div className="hellobox">
         {trail.map((style, index) => (
             <animated.span 
                 key={index} 
