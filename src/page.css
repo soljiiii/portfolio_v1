@@ -155,7 +155,7 @@
     margin-bottom: 30px;
 }
 .skillBox{
-    display: block;
+    display: inline-block;
 }
 .frontBox{
     width: 810px;
@@ -215,6 +215,42 @@
     width: 100px;
     height: 50px;
     padding-top: 15px;
+}
+.skillItem{
+    position: relative;
+    display: inline-block;
+}
+.tooltip{
+    visibility: hidden;
+    width: 180px;
+    background-color: rgba(228, 250, 228, 0.488);
+    color: #303030;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%; /* 말풍선을 상자 위에 위치시키기 위해 */
+    left: 25%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-weight: 500;
+}
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* 화살표를 아래쪽에 */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:rgba(228, 250, 228, 0.488) transparent transparent transparent;
+}
+
+.skillItem:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 
 /*프로젝트*/
